@@ -1,0 +1,49 @@
+# Data Cleaning Summary – Sales Dataset
+
+## Objective:
+Clean and prepare the retail sales dataset downloaded from Kaggle for further analysis and visualization.
+
+---
+
+## Cleaning Steps Performed:
+
+1. **Column Headers Formatting**
+   - Removed extra spaces from column headers
+   - Converted all headers to lowercase for consistency
+
+2. **Missing and Duplicate Data Handling**
+   - Used `COUNTBLANK()` to identify empty cells
+   - Checked for duplicates and removed them to maintain data integrity
+
+3. **Data Type Corrections**
+   - Converted `order_value_eur` and `cost` columns to number format
+   - Adjusted decimal places properly
+
+4. **Date Format Fixing**
+   - Some dates were in text format, so fixed them using:
+     - `Data` → `Text to Columns` → Delimited → Next → Next → Date (MDY) → Finish
+     - Then applied custom format: `dd-mm-yyyy`
+   - Ensured all dates are right-aligned (i.e., proper date values)
+
+5. **Formula Used for Validation**
+   - Used `ISTEXT()` and `ISNUMBER()` to check data types
+   - Used `COUNTBLANK()` to count missing values
+
+6. **Table Conversion**
+   - Converted entire dataset to an Excel table for better filtering, sorting, and formatting
+
+7. **Final Save Format**
+   - Saved the cleaned file as `.xlsx` format for compatibility and submission
+
+---
+
+## Tools Used:
+- Microsoft Excel
+
+---
+
+## Submitted by:
+**Sheikh Sonu**  
+Intern – Elevate Labs
+Data Analyst Internship
+Task: Internship Task 1 – Data Cleaning
